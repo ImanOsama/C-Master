@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="c++.png" alt="C++ Logo" class="logo">
+            <h1>C++ Master</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#" class="nav-link" data-section="topics">Topics</a></li>
+                <li><a href="#" class="nav-link" data-section="settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active">
+            <h2>Welcome to C++ Master</h2>
+            <div class="welcome-msg">
+                <p>Hello <span id="user-welcome">there</span>! Welcome to your C++ learning journey.</p>
+                <p>C++ Master is designed to help you learn C++ programming from the ground up with clear explanations and practical examples.</p>
+                <p>Whether you're a complete beginner or looking to refresh your skills, our structured lessons will guide you through all the fundamental concepts of C++ programming.</p>
+                <div class="start">
+                    <p>lets start</p>
+                    <a href="#" class="nav-link" data-section="topics">Explore Our Topics</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About C++ Master</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>C++ Master was created to provide a simple way to learn C++ programming. Our mission is to make C++ accessible to everyone.</p>
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>Email: <a href="contact@cppmaster.com">contact@cppmaster.com</a></li>
+                        <li>Phone: +20 1020570755 </li>
+                        <li>Address: Mansoura University, Creativa, ITI</li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="blank" class="social-icon">Facebook</a>
+                        <a href="https://instagram.com" target="blank" class="social-icon">Instagram</a>
+                        <a href="https://twitter.com" target="blank" class="social-icon">X</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="content-section">
+            <h2>C++ Learning Topics</h2>
+            <div class="topics-cards">
+                <div class="topic-card" data-topic="vars">
+                    <h3>Variables & Data Types</h3>
+                    <p>Learn about data types in C++.</p>
+                </div>
+                <div class="topic-card" data-topic="conditions">
+                    <h3>Conditional Statements</h3>
+                    <p>Make decisions in your code with if, else, and switch.</p>
+                </div>
+                <div class="topic-card" data-topic="loops">
+                    <h3>Loops</h3>
+                    <p>Automatic repeatfor better code with for, while, and do-while loops.</p>
+                </div>
+                <div class="topic-card" data-topic="functions">
+                    <h3>Functions</h3>
+                    <p>Build your own functions to organize Your code.</p>
+                </div>
+                <div class="topic-card" data-topic="data-structures">
+                    <h3>Data Structures</h3>
+                    <p>Work with arrays, vectors, and structs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="settings" class="content-section">
+            <h2>Settings</h2>
+            <div class="settings-form">
+                <div class="setting-group">
+                    <h3>Personalization</h3>
+                    <label for="user-name">Your Name:</label>
+                    <input type="text" id="user-name" placeholder="Enter your name">
+                    
+                    <label for="theme-select">Theme:</label>
+                    <select id="theme-select">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark Mode</option>
+                        <option value="light">Light Mode</option>
+                        <option value="high-contrast">High Contrast</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <h3>Progress Tracking</h3>
+                    <label>
+                        <input type="checkbox" id="track-progress" checked>
+                        Track my learning progress
+                    </label>
+                    
+                    <div id="progress-display">
+                        <p>Today's progress: <span id="progress-percent">0</span>%</p>
+                        <progress id="progress-bar" value="0" max="100"></progress>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                
+                <button id="save-settings">Save Settings</button>
+                <button id="reset-data" class="reset-button">Reset All Data</button></div>
+            </div>
+        </section>
+
+        <section id="vars-content" class="topic-content-section">
+        </section>
+        <section id="topic-detail" class="content-section">
+            <div class="topic-header">
+                <button id="back-to-topics" class="back-button">← Back to Topics</button>
+                <h2 id="topic-title">Topic Title</h2>
+            </div>
+            
+            <div class="topic-content">
+                <div class="topic-explanation">
+                    <h3>Explanation</h3>
+                    <div id="topic-description">
+                    </div>
+                </div>
+                
+                <div class="topic-code">
+                    <h3>Code Example</h3>
+                    <div class="code-editor">
+                        <div class="code-toolbar">
+                            <span class="code-language">C++</span>
+                            <button class="copy-code">Copy</button>
+                            <button class="run-code">Run</button>
+                        </div>
+                        <pre id="code-example"><code class="language-cpp">
+                        </code></pre>
+                    </div>
+                    <div class="code-output">
+                        <h4>Output</h4>
+                        <div id="output-result" class="output-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>C++ Master &copy; 2025 - Learn C++ with us</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
